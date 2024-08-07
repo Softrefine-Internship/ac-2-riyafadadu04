@@ -1,0 +1,62 @@
+.sidebar {
+  height: 100vh;
+  overflow-y: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  &__logo-head {
+    height: 6.6rem;
+    border-bottom: 0.2rem solid rgba($color-grey-light, 0.2);
+    padding: 2rem;
+  }
+  &__list-box {
+    padding: 2rem 0;
+
+    &__item {
+      &__label {
+        padding: 1rem 3rem;
+        position: relative;
+        font-size: 1.7rem;
+        font-weight: 900;
+        display: block;
+
+        &::after {
+          content: "\276F";
+          position: absolute;
+          right: 2rem;
+          bottom: 1.1rem;
+          width: 1.6rem;
+          height: 1.6rem;
+          font-weight: 300;
+          transform: rotate(90deg);
+          transition: all 0.2s;
+        }
+      }
+      &__input {
+        position: absolute;
+        display: none;
+        width: 100%;
+        &:checked ~ .sidebar__list-box__item__ul {
+          display: block;
+        }
+        &:checked + .sidebar__list-box__item__label::after {
+          transform: rotate(270deg);
+          right: 3rem;
+          bottom: 1.5rem;
+        }
+      }
+      &__ul {
+        display: none;
+        overflow: hidden;
+        padding: 0 4.5rem;
+        list-style: none;
+
+        &__li{
+          font-size: 1.36rem;
+          line-height: 1.1;
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+}

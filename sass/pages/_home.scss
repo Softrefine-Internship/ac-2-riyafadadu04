@@ -1,0 +1,14 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 4.5vw 17vw 1.3fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar{
+    background: $color-primary-light;
+}
+
+.task{
+    box-shadow: 1rem 0 2rem 1rem rgba($color-grey-light, .2);
+}

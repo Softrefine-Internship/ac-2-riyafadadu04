@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 #F2ECE2
 #F0894D
@@ -35,6 +36,7 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -45,6 +47,203 @@ body {
 body {
   font-family: "Lato";
   line-height: 1.7;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.navbar__logo {
+  font-size: 4rem;
+  height: 6.6rem;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 0.2rem solid rgba(157, 157, 157, 0.2);
+}
+.navbar__ul {
+  list-style: none;
+}
+.navbar__ul__item {
+  width: 100%;
+  height: 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__ul__item__icon {
+  width: 3rem;
+}
+.navbar__ul__item:hover, .navbar__ul__item--selected {
+  background: #F2ECE2;
+}
+.navbar__help {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar {
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar__logo-head {
+  height: 6.6rem;
+  border-bottom: 0.2rem solid rgba(157, 157, 157, 0.2);
+  padding: 2rem;
+}
+.sidebar__list-box {
+  padding: 2rem 0;
+}
+.sidebar__list-box__item__label {
+  padding: 1rem 3rem;
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 900;
+  display: block;
+}
+.sidebar__list-box__item__label::after {
+  content: "❯";
+  position: absolute;
+  right: 2rem;
+  bottom: 1.1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-weight: 300;
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+.sidebar__list-box__item__input {
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+.sidebar__list-box__item__input:checked ~ .sidebar__list-box__item__ul {
+  display: block;
+}
+.sidebar__list-box__item__input:checked + .sidebar__list-box__item__label::after {
+  transform: rotate(270deg);
+  right: 3rem;
+  bottom: 1.5rem;
+}
+.sidebar__list-box__item__ul {
+  display: none;
+  overflow: hidden;
+  padding: 0 4.5rem;
+  list-style: none;
+}
+.sidebar__list-box__item__ul__li {
+  font-size: 1.36rem;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.project {
+  padding: 2rem 3rem;
+}
+.project__search-box {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #9D9D9D;
+  padding: 1rem 1.2rem;
+  border-radius: 5rem;
+  color: #9D9D9D;
+}
+.project__search-box__icon {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+}
+.project__search-box__input {
+  padding: 0.1rem;
+  margin-left: 0.8rem;
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 1.5rem;
+}
+.project__search-box__input::placeholder {
+  color: #9D9D9D;
+}
+.project__container__head {
+  display: flex;
+  justify-content: space-between;
+}
+.project__container__cards-main {
+  display: flex;
+  gap: 2rem;
+}
+.project__container__card {
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.project__container__card--1 {
+  background: #FCBEA4;
+}
+.project__container__card--2 {
+  background: #FCE6BD;
+}
+.project__container__card__head {
+  display: flex;
+  justify-content: space-between;
+}
+.project__container__card__head__imgs {
+  display: flex;
+}
+.project__container__card__head__imgs .card__img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid inherit;
+  object-fit: cover;
+  margin-right: -2rem;
+}
+.project__container__card__head__imgs .card__img__span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  font-size: 1.5rem;
+}
+.project__container__card__head__imgs .card__img--1 {
+  position: relative;
+  z-index: 3;
+  background: #000;
+}
+.project__container__card__head__imgs .card__img--2 {
+  z-index: 2;
+}
+.project__container__card__head__imgs .card__img--3 {
+  z-index: 1;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 4.5vw 17vw 1.3fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #F2ECE2;
+}
+
+.task {
+  box-shadow: 1rem 0 2rem 1rem rgba(157, 157, 157, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,85 @@
+.project {
+  padding: 2rem 3rem;
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid $color-grey-light;
+    padding: 1rem 1.2rem;
+    border-radius: 5rem;
+    color: $color-grey-light;
+    &__icon {
+      display: flex;
+      align-items: center;
+      width: 2rem;
+    }
+    &__input {
+      padding: 0.1rem;
+      margin-left: 0.8rem;
+      border: none;
+      flex: 1;
+      outline: none;
+      font-size: 1.5rem;
+      &::placeholder {
+        color: $color-grey-light;
+      }
+    }
+  }
+  &__container{
+    &__head{
+        display: flex;
+        justify-content: space-between
+    }
+    &__cards-main{
+        display: flex;
+        gap: 2rem;
+    }
+    &__card{
+      width: 20rem;
+      padding: 2rem;
+      border-radius: 2rem;
+
+      &--1{
+        background: $color-secondary-light;
+      }
+      &--2{
+        background: $color-primary-dark;
+      }
+        &__head{
+            display: flex;
+            justify-content: space-between;
+
+            &__imgs{
+                display: flex;
+                .card__img{
+                  width: 4rem;
+                  height: 4rem;
+                  border-radius: 50%;
+                  border: .2rem solid inherit;
+                  object-fit: cover;
+                  margin-right: -2rem;
+                  &__span{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: azure;
+                    font-size: 1.5rem;
+                  }
+                  &--1{
+                    position: relative;
+                    z-index: 3;
+                    background: #000;
+                  }
+                  &--2{
+                    z-index: 2;
+                  }
+                  &--3{
+                    z-index: 1;
+                  }
+                }
+            }
+        }
+    }
+  }
+}
