@@ -53,6 +53,7 @@
       border-radius: 2rem;
       display: grid;
       transition: all 0.2s;
+      cursor: pointer;
 
       &:hover {
         transform: scale(1.01);
@@ -186,6 +187,7 @@
           border-radius: 5rem;
           border: 0.2rem dashed $color-secondary-dark;
           transition: all 0.2s;
+          cursor: pointer;
           &:hover {
             background: $color-secondary-dark;
             color: $color-white;
