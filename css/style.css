@@ -851,8 +851,7 @@ body {
 }
 .app-nav__list-box__item__data {
   background: #F2ECE2;
-  padding: 2rem;
-  position: absolute;
+  padding: 2rem 2rem 0 2rem;
   display: none;
   overflow: hidden;
 }
@@ -876,7 +875,7 @@ body {
 }
 .app-nav__list-box__item-sub__data {
   background: #F2ECE2;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   position: absolute;
   right: 0;
   left: 0;

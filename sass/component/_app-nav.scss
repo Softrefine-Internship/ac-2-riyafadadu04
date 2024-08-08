@@ -67,8 +67,7 @@
     }
     &__data {
       background: $color-primary-light;
-      padding: 2rem;
-      position: absolute;
+      padding: 2rem 2rem 0 2rem;
       display: none;
       overflow: hidden;
     }
@@ -93,7 +92,7 @@
     }
     &__data {
       background: $color-primary-light;
-      padding: 2rem;
+      padding: 2rem 2rem 0 2rem;
       position: absolute;
       right: 0;
       left: 0;
