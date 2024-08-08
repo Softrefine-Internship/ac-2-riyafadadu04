@@ -1,0 +1,68 @@
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .task__boxs__items__box__top__input-box {
+    input[type="checkbox"] {
+      --active: #F0894D;
+      --active-inner: #fff;
+      --focus: .2rem rgba(#F0894D, 0.3);
+      --border: #F0894D;
+      --border-hover: #F0894D;
+      --background: #fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 1.7rem;
+      height: 1.7rem;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: .1rem solid $color-secondary-dark;
+      background: var(--b, var(--background));
+      transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+      &::after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: all .2s;
+      }
+      &:checked {
+        --b: var(--active);
+      }
+      &:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+      }
+      &:focus {
+        box-shadow: 0 0 0 var(--focus);
+      }
+      &:not(.switch) {
+        border-radius: .5rem;
+      }
+    }
+    & input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    & input[type="checkbox"]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    & input[type="checkbox"]:not(.switch) {
+      border-radius: .5rem;
+      &::after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+      }
+      &:checked {
+        --r: 43deg;
+      }
+    }
+  }
+}

@@ -18,6 +18,91 @@
   </head>
   <body>
     <section class="main-container">
+      <section class="app-nav-container">
+        <div class="app-nav">
+          <div class="app-nav__right">
+            <div class="app-nav__right__logo">
+              <div class="app-nav__right__logo--icon">Z</div>
+              <div class="app-nav__right__logo__text">
+                <h1 class="heading-1">Ziferblat</h1>
+                <p class="app-nav__right__logo__text__title">
+                  Teamwork & Time Management
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="app-nav__left">
+            <input
+              class="app-nav__left__input"
+              type="checkbox"
+              name="accordion"
+              id="tab-nav"
+            />
+            <label for="tab-nav" class="app-nav__left__label"><i class="fa-solid fa-bars"></i></label>
+            <div class="app-nav__left__data">
+              <div class="app-nav__left__data__box">
+                <div class="app-nav__list-box__item">
+                  <p class="app-nav__list-box__item__label">Home</p>
+                </div>
+                <div class="app-nav__list-box__item">
+                  <input
+                    class="app-nav__list-box__item__input"
+                    type="checkbox"
+                    name="accordion"
+                    id="tab-nav-1"
+                    checked
+                  />
+                  <label for="tab-nav-1" class="app-nav__list-box__item__label"
+                    >Team</label
+                  >
+                  <div class="app-nav__list-box__item__data">
+                    <div class="app-nav__list-box__item-sub">
+                      <input
+                        class="app-nav__list-box__item-sub__input"
+                        type="checkbox"
+                        name="accordion"
+                        id="tab-nav-sub1"
+                      />
+                      <label
+                        for="tab-nav-sub1"
+                        class="app-nav__list-box__item-sub__label"
+                        >Sub-list-1</label
+                      >
+                      <div class="app-nav__list-box__item-sub__data">
+                        <li class="app-nav__list-box__item-sub__data--li">list-1</li>
+                        <li class="app-nav__list-box__item-sub__data--li">list-1</li>
+                      </div>
+                    </div>
+                    <div class="app-nav__list-box__item-sub">
+                      <input
+                        class="app-nav__list-box__item-sub__input"
+                        type="checkbox"
+                        name="accordion"
+                        id="tab-nav-sub2"
+                      />
+                      <label
+                        for="tab-nav-sub2"
+                        class="app-nav__list-box__item-sub__label"
+                        >Sub-list-2</label
+                      >
+                      <div class="app-nav__list-box__item-sub__data">
+                        <li class="app-nav__list-box__item-sub__data--li">list-1</li>
+                        <li class="app-nav__list-box__item-sub__data--li">list-1</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-nav__list-box__item">
+                  <p class="app-nav__list-box__item__label">Reminder</p>
+                </div>
+                <div class="app-nav__list-box__item">
+                  <p class="app-nav__list-box__item__label">Help</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="navbar">
         <div class="navbar__logo">Z</div>
         <ul class="navbar__ul">
@@ -124,7 +209,7 @@
       </section>
       <section class="sidebar">
         <div class="sidebar__logo-head">
-          <h2 class="heading-2">Ziferblat</h2>
+          <h1 class="heading-1">Ziferblat</h1>
           <p class="sidebar__logo-head__title">Teamwork & Time Management</p>
         </div>
         <div class="sidebar__list-box">
@@ -220,8 +305,8 @@
         </div>
       </section>
       <section class="project">
-        <h1 class="heading-1">Today 4, October</h1>
-        <form action="#" method="post" class="project__search-box">
+        <h1 class="heading-1 u-mb-sm">Today 4, October</h1>
+        <form action="#" method="post" class="project__search-box u-mb-md">
           <span class="project__search-box__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -247,15 +332,17 @@
           />
         </form>
         <div class="project__container">
-          <div class="project__container__head">
-            <h3 class="heading-3">Recent Projects</h3>
+          <div class="project__container__head u-mb-sm">
+            <h2 class="heading-2">Recent Projects</h2>
             <a href="#" class="project__container__head__link">View All</a>
           </div>
           <div class="project__container__cards-main">
             <div class="project__container__card project__container__card--1">
               <div class="project__container__card__head">
-                <div class="project__container__card__head__imgs">
-                  <span class="card__img card__img--1"><span class="card__img__span">+3</span></span>
+                <div class="project__container__card__head__imgs project__container__card__head__imgs--1">
+                  <span class="card__img card__img--1"
+                    ><span class="card__img__span">+3</span></span
+                  >
                   <img
                     src="./assets/girl-1.jpeg"
                     alt="girl-1"
@@ -267,25 +354,29 @@
                     class="card__img card__img--3"
                   />
                 </div>
-                <div class="project__container__card__head__right">:</div>
+                <span class="project__container__card__head__right">:</span>
               </div>
               <div class="project__container__card__title">
-                <h1 class="heading-1">Design System</h1>
+                <h1 class="heading-1 u-mb-sm">Design System</h1>
                 <p class="project__container__card__title__sub-head">
                   Deadline: 18 October
                 </p>
               </div>
               <div class="project__container__card__progress">
-                <span class="project__container__card__progress__span">84 hours / 40%</span>
+                <p class="project__container__card__progress__span">
+                  84 hours / 40%
+                </p>
                 <div class="progress-main">
-                  <div class="progress-line"></div>
+                  <div class="progress-line progress-line--1"></div>
                 </div>
               </div>
             </div>
             <div class="project__container__card project__container__card--2">
               <div class="project__container__card__head">
-                <div class="project__container__card__head__imgs">
-                  <span class="card__img card__img--1"><span class="card__img__span">+3</span></span>
+                <div class="project__container__card__head__imgs project__container__card__head__imgs--2">
+                  <span class="card__img card__img--1"
+                    ><span class="card__img__span">+2</span></span
+                  >
                   <img
                     src="./assets/girl-1.jpeg"
                     alt="girl-1"
@@ -300,22 +391,233 @@
                 <div class="project__container__card__head__right">:</div>
               </div>
               <div class="project__container__card__title">
-                <h1 class="heading-1">Design System</h1>
+                <h1 class="heading-1 u-mb-sm">Make Unique page for customer</h1>
                 <p class="project__container__card__title__sub-head">
                   Deadline: 18 October
                 </p>
               </div>
               <div class="project__container__card__progress">
-                <span class="project__container__card__progress__span">84 hours / 40%</span>
+                <p class="project__container__card__progress__span">
+                  108 hours / 75%
+                </p>
                 <div class="progress-main">
-                  <div class="progress-line"></div>
+                  <div class="progress-line progress-line--2"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="project__container__reminder">
+          <h2 class="heading-2 u-mb-sm">Reminders</h2>
+          <div class="project__container__reminder__div">
+            <p class="project__container__reminder__div__p">
+              Tommorow, 16.00 - 18.00
+            </p>
+            <div class="project__container__reminder__box">
+              <div class="project__container__reminder__box__right">
+                <h3 class="heading-3">
+                  Discussion of the intern result of the project
+                </h3>
+              </div>
+              <div class="project__container__reminder__box__left">
+                <button class="project__container__reminder__box__left__btn">
+                  Set Reminder
+                </button>
+              </div>
+              <div class="project__container__reminder__page-nav">
+                <a
+                  href="#"
+                  class="project__container__reminder__page-nav__btn project__container__reminder__page-nav__btn--selected"
+                ></a>
+                <a
+                  href="#"
+                  class="project__container__reminder__page-nav__btn"
+                ></a>
+                <a
+                  href="#"
+                  class="project__container__reminder__page-nav__btn"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="task">task</section>
+      <section class="task">
+        <div class="task__menu u-mb-sm">
+          <span class="task__menu__dot"></span
+          ><span class="task__menu__dot"></span
+          ><span class="task__menu__dot"></span>
+        </div>
+        <div class="task__head">
+          <div><button class="task__head__btn">Add Project</button></div>
+          <div class="task__head__items">
+            <span class="task__head__items__noti">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="task__head__items__noti--icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                ></path>
+              </svg>
+            </span>
+            <div class="task__head__items__user">
+              <div>
+                <img
+                  src="./assets/girl-1.jpeg"
+                  alt="girl-1"
+                  class="task__head__items__user__img"
+                />
+              </div>
+              <div class="task__head__items__user__box">
+                <p class="task__head__items__user__box--user">User</p>
+                <p class="task__head__items__user__box--name">Maria</p>
+              </div>
+              <div class="task__head__items__user__arr">&#62;</div>
+            </div>
+          </div>
+        </div>
+        <div class="task__team">
+          <h2 class="heading-2 u-mb-sm">Team Members</h2>
+          <div class="task__team__images">
+            <img
+              src="./assets/boy-1.jpg"
+              alt=""
+              class="task__team__images__img"
+            />
+            <img
+              src="./assets/girl-1.jpeg"
+              alt=""
+              class="task__team__images__img"
+            />
+            <div class="task__team__images__img task__team__images__img--none">
+              JR
+            </div>
+            <img
+              src="./assets/girl-2.jpeg"
+              alt=""
+              class="task__team__images__img"
+            />
+            <img
+              src="./assets/girl-3.jpg"
+              alt=""
+              class="task__team__images__img"
+            />
+            <span class="task__team__images__img--add">+</span>
+          </div>
+        </div>
+        <div class="task__project">
+          <div class="task__project__item">
+            <p class="task__project__item__title">Project time</p>
+            <h2 class="heading-2">18 Hours</h2>
+          </div>
+          <div class="task__project__item">
+            <p class="task__project__item__title">Task in Progress</p>
+            <h2 class="heading-2">2</h2>
+          </div>
+          <div class="task__project__item">
+            <p class="task__project__item__title">Finished Tasks</p>
+            <h2 class="heading-2">16</h2>
+          </div>
+        </div>
+        <div class="task__boxs">
+          <div class="project__container__head u-mb-sm">
+            <h2 class="heading-2">Daily tasks (3)</h2>
+            <a href="#" class="project__container__head__link">Edit</a>
+          </div>
+          <div class="task__boxs__items">
+            <div class="task__boxs__items__box task__boxs__items__box--1">
+              <div class="task__boxs__items__box--1--title">Add new</div>
+              <div class="task__boxs__items__box--1--add">+</div>
+            </div>
+            <div class="task__boxs__items__box task__boxs__items__box--2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+                class="task__boxs__items__box__svg1"
+              >
+                <path
+                  fill="none"
+                  fill-opacity="1"
+                  stroke="#f0884e"
+                  stroke-width="8"
+                  id="changeco"
+                  d="M0,96L48,85.3C96,75,192,53,288,85.3C384,117,480,203,576,202.7C672,203,768,117,864,74.7C960,32,1056,32,1152,74.7C1248,117,1344,203,1392,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+                class="task__boxs__items__box__svg2"
+              >
+                <path
+                  fill="none"
+                  fill-opacity="1"
+                  stroke="#f0884e"
+                  stroke-width="8"
+                  id="changeco"
+                  d="M0,96L48,85.3C96,75,192,53,288,85.3C384,117,480,203,576,202.7C672,203,768,117,864,74.7C960,32,1056,32,1152,74.7C1248,117,1344,203,1392,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+              </svg>
+              <div class="task__boxs__items__box__top">
+                <span
+                  class="task__boxs__items__box__top__dot task__boxs__items__box__top__dot--2"
+                ></span>
+                <p class="task__boxs__items__box__top__title">New</p>
+                <div class="task__boxs__items__box__top__input-box">
+                  <input id="input-box" type="checkbox" />
+                </div>
+              </div>
+              <div class="task__boxs__items__box__detail">
+                Change color palette to more bright
+              </div>
+            </div>
+            <div class="task__boxs__items__box task__boxs__items__box--3">
+              <span class="task__boxs__items__box--3--box1"></span>
+              <span class="task__boxs__items__box--3--box2"></span>
+              <span class="task__boxs__items__box--3--box3"></span>
+
+              <div class="task__boxs__items__box__top">
+                <span
+                  class="task__boxs__items__box__top__dot task__boxs__items__box__top__dot--3"
+                ></span>
+                <p class="task__boxs__items__box__top__title">In Progress</p>
+                <div class="task__boxs__items__box__top__input--2">
+                  <div class="task__boxs__items__box__top__input-box">
+                    <input id="input-box" type="checkbox" />
+                  </div>
+                  <span class="checkmark"></span>
+                </div>
+              </div>
+              <div class="task__boxs__items__box__detail">
+                Make prototype for mobile version
+              </div>
+            </div>
+            <div class="task__boxs__items__box task__boxs__items__box--4">
+              <span class="task__boxs__items__box--4--box1"></span>
+              <span class="task__boxs__items__box--4--box2"></span>
+              <span class="task__boxs__items__box--4--box3"></span>
+
+              <div class="task__boxs__items__box__top">
+                <span
+                  class="task__boxs__items__box__top__dot task__boxs__items__box__top__dot--4"
+                ></span>
+                <p class="task__boxs__items__box__top__title">Done</p>
+                <div class="task__boxs__items__box__top__box-black">&#62;</div>
+              </div>
+              <div class="task__boxs__items__box__detail">
+                Make Fixes in homepage
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>

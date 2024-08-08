@@ -1,24 +1,29 @@
 .sidebar {
   height: 100vh;
   overflow-y: auto;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
   &__logo-head {
-    height: 6.6rem;
+    height: 7rem;
     border-bottom: 0.2rem solid rgba($color-grey-light, 0.2);
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    &__title {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
   }
   &__list-box {
-    padding: 2rem 0;
+    padding: 1.2rem 0;
 
     &__item {
       &__label {
-        padding: 1rem 3rem;
+        padding: 1.2rem 3rem;
         position: relative;
         font-size: 1.7rem;
         font-weight: 900;
         display: block;
+        cursor: pointer;
 
         &::after {
           content: "\276F";
@@ -41,20 +46,23 @@
         }
         &:checked + .sidebar__list-box__item__label::after {
           transform: rotate(270deg);
-          right: 3rem;
+          right: 3.4rem;
           bottom: 1.5rem;
         }
       }
       &__ul {
         display: none;
         overflow: hidden;
-        padding: 0 4.5rem;
+        padding: 1.2rem 4.5rem;
         list-style: none;
 
-        &__li{
+        &__li {
           font-size: 1.36rem;
-          line-height: 1.1;
-          margin-bottom: 1.2rem;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-bottom: 1.2rem;
+          }
         }
       }
     }

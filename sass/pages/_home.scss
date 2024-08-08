@@ -1,14 +1,57 @@
-.main-container{
-    display: grid;
-    grid-template-columns: 4.5vw 17vw 1.3fr 1fr;
-    height: 100vh;
-    overflow: hidden;
+.main-container {
+  display: grid;
+  grid-template-columns: 4.5vw 18vw 1.35fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+  @include respond(tab) {
+  grid-template-columns: 1.35fr 1fr;
+  overflow: auto;
+  }
 }
 
-.sidebar{
-    background: $color-primary-light;
+.sidebar {
+  background: $color-primary-light;
+  @include respond(tab) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.navbar{
+  @include respond(tab) {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-.task{
-    box-shadow: 1rem 0 2rem 1rem rgba($color-grey-light, .2);
+.project {
+  padding: 2rem 3rem;
+  @include scroll;
+  @include respond(tab) {
+    margin-top: 8rem;
+  }
+  @include respond(phone) {
+  grid-column: 1/-1;
+  height: max-content;
+  }
+}
+.task {
+  box-shadow: 1rem 0 2rem 1rem rgba($color-grey-light, 0.2);
+  @include scroll;
+  @include respond(tab) {
+    margin-top: 8rem;
+  }
+  @include respond(phone) {
+    grid-column: 1/-1;
+  height: max-content;
+  box-shadow: none;
+  margin: 0;
+    }
+}
+
+.app-nav-container{
+  display: none;
+  @include respond(tab) {
+    grid-column: 1/-1;
+    display: block;
+  }
 }

@@ -8,30 +8,22 @@
 html {
   font-size: 62.5%; //1rem=10px
 
-  @include respond(tab-land) {
-    // width < 1200 ?
-    font-size: 56.25%; //1rem=9px (9/16)
+  @include respond(laptop-large) {
+    font-size: 56.25%; 
   }
-  @include respond(tab-port) {
-    // width < 900 ?
-    font-size: 50%; //1rem=8px
+  @include respond(laptop-small) {
+    font-size: 43%;
   }
-
-  // @include respond(phone) {
-  //   // width < 600 ?
-  //   font-size: 30%; //1rem=4.8px
-  // }
-
+  @include respond(tab) {
+    font-size: 37.5%;
+  }
   @include respond(big-desktop) {
-    font-size: 75%; //arem = 12px (12/16)
+    font-size: 75%;
   }
 }
 
 body {
   box-sizing: border-box;
   overflow: hidden;
-
-  @include respond(tab-port) {
-    padding: 0;
-  }
+  line-height: 1;
 }

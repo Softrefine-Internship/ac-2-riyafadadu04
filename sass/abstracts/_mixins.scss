@@ -5,24 +5,39 @@
     clear: both;
   }
 }
+@mixin scroll {
+  height: 100vh;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 // media queries
-// order : base +typo > general layout + grid > page layout > component
-// breakpoints styles
 //1em = 16px;
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) { //600px
+    @media only screen and (max-width: 31.25em) { //425px
         @content;
       }
   }
-  @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) { //900px
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 37.5em) { 
+        @content;
+      }
+  }
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 48em) { 
+        @content;
+      }
+  }
+  @if $breakpoint == laptop-small {
+    @media only screen and (max-width: 64em) { //1024px
       @content;
     }
   }
-  @if $breakpoint == tab-land {
-    @media only screen and (max-width: 75em) { //1200px
+  @if $breakpoint == laptop-large {
+    @media only screen and (max-width: 90rem) { //1440px
       @content;
     }
   }

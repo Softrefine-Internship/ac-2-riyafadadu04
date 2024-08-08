@@ -5,8 +5,10 @@
   height: 100vh;
   &__logo {
     font-size: 4rem;
-    height: 6.6rem;
-    text-align: center;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     border-bottom: .2rem solid rgba($color-grey-light,.2);
   }
@@ -19,6 +21,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       &__icon {
         width: 3rem;
       }
@@ -38,6 +41,7 @@
     align-items: center;
     justify-content: center;
     align-self: center;
+    cursor: pointer;
     font-size: 3rem;
     margin-bottom: 2rem;
   }
